@@ -109,7 +109,7 @@ namespace StarChart.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id, string name)
+        public IActionResult Delete(int id)
         {
             var deleteCelestialObject = _context.CelestialObjects.Find(id);
 
